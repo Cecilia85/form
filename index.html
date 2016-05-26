@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link href="bootstrap.css"rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body class="container">
+
+<div id="blanks">
+        <form class="wrapper">
+        <fieldset class="form-group">
+          <label for="food">Fill in your favorite food</label>
+          <input type="text" id="food" placeholder="food">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="music">Fill in your favorite music</label>
+        <input type="text" id="music" placeholder="music">
+        </fieldset>
+
+
+         <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="chocolate" checked>
+            Chocolate
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="vanilla">
+            Vanilla
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="cookiesandcream">
+            Cookies & Cream
+          </label>
+        </div>
+<div class="form-group">
+  <label for="color">What is your favorite color?</label>
+  <input id="color" class="color" type="color">
+</div> 
+<button type="submit" class="btn">Submit info</button>
+      </form>
+</div>
+<div id="story">
+  <h1>Your story</h1>
+  <p>My favorite food is<span class="food"></span> and my favorite music is <span class="music"></span>.
+    Yesterday i ate <span class="flavor"></span>icecream. My favorite color is <span class="color"></span>
+    </div>
+
+  </body>
+</html>
